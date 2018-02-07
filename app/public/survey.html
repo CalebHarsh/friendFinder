@@ -23,7 +23,9 @@
 
 <body>
   <div class="jumbotron p-2 px-5">
-    <h1 class="display-4 text-center">Friend Finder</h1>
+    <a class="text-dark" style="text-decoration: none;" href="/">
+      <h1 class="display-4 text-center">Friend Finder</h1>
+    </a>
     <hr class="my-4">
     <p class="text-center display-5">Answer these 10 question to find fast friends</p>
   </div>
@@ -31,132 +33,212 @@
     <h2>Survey Questions</h2>
     <form method="POST" role="form">
       <ul id='questions' class="list-group">
-
+        <li class="list-group-item">
+          <label class="pt-2" for="name">Type Your Name (required)</label>
+          <input required class="form-control" type="text" name="name" id="name" placeholder="Mr. Smith">
+          <label class="pt-2" for="pic">Link to your Image (required)</label>
+          <input required class="form-control" type="text" name="pic" id="pic" placeholder="example.jpg">
+        </li>
         <li class="list-group-item px-4">
-          <h3>Question 1</h3>
+          <h4>Question 1</h4>
+          <p>How often do you watch TV?</p>
           <hr>
           <select class="form-control" id="question-1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 2</h3>
+          <h4>Question 2</h4>
+          <p>How often do you video games?</p>
           <hr>
           <select class="form-control" id="question-2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly))</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 3</h3>
+          <h4>Question 3</h4>
+          <p>How often do you excercise?</p>
           <hr>
           <select class="form-control" id="question-3">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 4</h3>
+          <h4>Question 4</h4>
+          <p>How often do you play sports?</p>
           <hr>
           <select class="form-control" id="question-4">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 5</h3>
+          <h4>Question 5</h4>
+          <p>How much do you enjoy traveling?</p>
           <hr>
           <select class="form-control" id="question-5">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 6</h3>
+          <h4>Question 6</h4>
+          <p>How much do you enjoy learning new things?</p>
           <hr>
           <select class="form-control" id="question-6">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 7</h3>
+          <h4>Question 7</h4>
+          <p>How often do like doing stuff outside?</p>
           <hr>
           <select class="form-control" id="question-7">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 8</h3>
+          <h4>Question 8</h4>
+          <p>How comfortable are you with trying new things?</p>
           <hr>
           <select class="form-control" id="question-8">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 9</h3>
+          <h4>Question 9</h4>
+          <p>How much do you enjoy doing things that are hard for you?</p>
           <hr>
           <select class="form-control" id="question-9">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
 
         <li class="list-group-item px-4">
-          <h3>Question 10</h3>
+          <h4>Question 10</h4>
+          <p>How much do you enjoy having fun and making jokes with people?</p>
           <hr>
           <select class="form-control" id="question-10">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1 (Hardly)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very)</option>
           </select>
         </li>
       </ul>
-      <button type="submit" class="btn btn-primary my-4" id="submit">Submit</button>
+      <a href="#">
+        <button type="button" class="btn btn-primary my-4 w-100" id="submit">Submit</button>
+      </a>
     </form>
   </div>
-  <script type="type/javascript">
 
+
+  <div class="modal fade" id="friend-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Here's your closest friend</h5>
+        </div>
+        <div class="modal-body text-center">
+          <img class="pb-2" src="" alt="Your Friends Image" id="friend-img">
+          <div class="clear-both"></div>
+          <h2 id="friend-name"></h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    $("#submit").on("click", e => {
+      // e.preventDefault()
+      if ($("#name").val().trim() != "" && $("#pic").val().trim() != "") {
+        var friendStats = {
+          name: $("#name").val().trim(),
+          picture: $("#pic").val().trim(),
+          answers: []
+        }
+        for (var i = 1; i < 11; i++) {
+          friendStats.answers.push($("#question-" + i).val())
+        }
+        $.get("/api/friends", res => {
+
+          var closest = res[0]
+          var prev = findLowest(friendStats.answers, closest.answers)
+
+          res.forEach(list => {
+            var diff = findLowest(friendStats.answers, list.answers)
+            if (diff < prev) {
+              closest = list
+              prev = diff
+            }
+          })
+          $("input").val("")
+          $("#friend-name").text(closest.name)
+          $("#friend-img").attr("src", closest.picture)
+          $("#friend-table").modal("show")
+        })
+        $.post("/api/friends", friendStats, res => {
+          console.log(res)
+        })
+
+      }
+    })
+    function findLowest(myArr, friArr) {
+      var total = 0
+      myArr.forEach((val, i) => {
+        total += Math.abs(val - friArr[i])
+      })
+      return total
+    }
   </script>
 
 </body>
