@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 
 //Setting up basic config for express
 var app = express();
+app.use(express.static("public"))
 
 //Setting up initial port
 var PORT = process.env.PORT || 3000;
