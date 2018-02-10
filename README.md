@@ -10,7 +10,7 @@ An app for finding friends that have similar interests
 
 ### Link to the Site
 
-* Check it out [Frined Finder](https://)
+* Check it out [Frined Finder](https://stark-thicket-46163.herokuapp.com)
 
 - - -
 

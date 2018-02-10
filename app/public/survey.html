@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <!-- CSS link -->
-  <link rel="stylesheet" href="./assests/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="assests/css/styles.css">
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- jQuery Link -->
@@ -212,7 +212,6 @@
           friendStats.answers.push($("#question-" + i).val())
         }
         $.get("/api/friends", res => {
-
           var closest = res[0]
           var prev = findLowest(friendStats.answers, closest.answers)
 
@@ -227,12 +226,20 @@
           $("#friend-name").text(closest.name)
           $("#friend-img").attr("src", closest.picture)
           $("#friend-table").modal("show")
-        }).then($.post("/api/friends", friendStats, res => {
-          console.log(res)
-        }))
+          postFriend(friendStats)
+        })
 
+      } else {
+        alert("You have to fill in NAME and provide a LINK to a picture")
       }
     })
+
+    function postFriend(data) {
+      $.post("/api/friends", data, res => {
+          console.log(res)
+        })
+    }
+
     function findLowest(myArr, friArr) {
       var total = 0
       myArr.forEach((val, i) => {
